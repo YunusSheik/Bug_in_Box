@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  font-size: 25px;
+}
+
+.box {
+  position: relative;
+  border: 1px solid;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+
+.lady_bug {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  transform: rotate(0deg);
+  width: 40px;
+  height: 40px;
+  background-image: url("./assets/ladybug.jpg");
+  background-size: cover;
+  /* background-position-x: -5px; */
+}
+
+.control_buttons {
+  text-align: center;
+  position: relative;
+  margin: auto;
+  top: 20px;
+  width: 450px;
+}
+
+.control_buttons > button {
+  font-size: 15px;
+  width: 30px;
+  margin: 5px;
+}
