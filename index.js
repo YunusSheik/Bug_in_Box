@@ -1,21 +1,3 @@
-{
-  /* <div id="main">
-<h1 id="title">Ladybird in a Box</h1>
-<div class="box">
-  <div class="ladybird"></div>
-</div>
-<div class="control-buttons">
-  <button id="left">←</button>
-  <button id="right">→</button>
-  <button id="up">↑</button>
-  <button id="down">↓</button>
-  <button id="turnClockWise">↻</button>
-  <button id="turnAntiClockWise">↺</button>
-  <button id="home">H</button>
-</div>
-</div> */
-}
-
 const main = document.createElement("div");
 main.setAttribute("class", "main");
 const title = document.createElement("h1");
