@@ -76,7 +76,6 @@ const turnClockWise = () => {
 };
 const turnAntiClockWise = () => {
   rotation -= 90;
-
   setTransform();
 };
 
@@ -94,3 +93,33 @@ leftBtn.addEventListener("click", stepLeft);
 homeBtn.addEventListener("click", home);
 turnClockWiseBtn.addEventListener("click", turnClockWise);
 turnAntiClockWiseBtn.addEventListener("click", turnAntiClockWise);
+
+//Keyboard keys to move the ladybug
+
+document.addEventListener("keydown", function (event) {
+  const { key } = event;
+  switch (key) {
+    case "ArrowLeft":
+      stepLeft();
+      break;
+    case "ArrowRight":
+      stepRight();
+      break;
+    case "ArrowUp":
+      stepUp();
+      break;
+    case "ArrowDown":
+      stepDown();
+      break;
+    case ",":
+      turnAntiClockWise();
+      break;
+    case ".":
+      turnClockWise();
+      break;
+    case "h":
+    case "H":
+      home();
+      break;
+  }
+});
